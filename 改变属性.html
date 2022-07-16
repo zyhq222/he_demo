@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.</title>
+    <style>
+        *{
+            margin: auto;
+            padding: 0px;
+        }
+        #block{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <button  onclick="btn1()">变宽</button>
+    <button   onclick="btn2()">变高</button>
+    <button  onclick="btn3()">变色</button>
+    <button  onclick="btn4()">隐藏</button>
+    <button   onclick="btn5()">显示</button>
+        <div id="block">
+                这是一个div
+        </div>
+</body>
+<script type="text/javascript">
+
+    var c_w=document.getElementById("block")
+        function btn1() {
+            // console.log(block);
+            c_w.style.width="200px"
+            // console.log(1);
+        }
+        function btn2() {
+            // console.log(block);
+            c_w.style.height="200px"
+            // console.log(1);
+        }
+        function btn3() {
+            // console.log(block);
+            c_w.style.background="red"
+            // console.log(1);
+        }
+        function btn4() {
+            // console.log(block);
+            c_w.style.display="none"
+            // console.log(1);
+        }
+        function btn5() {
+            // console.log(block);
+            c_w.style.display="block"
+            // console.log(1);
+        }
+</script>
+</html>

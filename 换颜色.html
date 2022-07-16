@@ -1,0 +1,33 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<style>
+#outer{width:5000px;height:200px;}
+#outer div{float:left;width:150px;height:150px;background:rgb(225, 158, 158);
+margin-left: 10px;
+}
+</style>
+<script>
+window.onload = function ()
+{
+	var oDiv = document.getElementById("outer").getElementsByTagName("div");
+	var oBtn = document.getElementsByTagName("button")[0];
+	oBtn.onclick = function ()
+	{
+		for(var i = 0; i < oDiv.length; i++) oDiv[i].style.background = "green";
+	}	
+}
+</script>
+</head>
+<body>
+<button>换颜色</button>
+<div id="outer">
+    <div>这是一个div</div>
+    <div>这是二个div</div>
+    <div>这是三个div</div>
+</div>
+</body>
+</html>
